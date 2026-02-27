@@ -5,7 +5,7 @@ Vio provides a declarative form system through `createForm()`. Define fields wit
 ## Creating a Form
 
 ```typescript
-import { createForm } from 'vio'
+import { createForm } from '@atrotos/vio'
 
 const form = createForm({
   fields: {
@@ -175,7 +175,7 @@ Each field is wrapped in a `<div class="form-field">`. If a `label` is defined, 
 Here is a complete example of a login form component:
 
 ```typescript
-import { createForm } from 'vio'
+import { createForm } from '@atrotos/vio'
 
 const LoginForm = {
   name: 'LoginForm',

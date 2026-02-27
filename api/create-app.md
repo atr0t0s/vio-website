@@ -5,7 +5,7 @@ Creates and returns a Vio application instance. This is the main entry point for
 ## Import
 
 ```ts
-import { createApp } from 'vio'
+import { createApp } from '@atrotos/vio'
 ```
 
 ## Signature
@@ -189,7 +189,7 @@ register(def: ComponentDef): void
 | `def` | [`ComponentDef`](./types#componentdef) | Component definition to register |
 
 ```ts
-import { defineComponent } from 'vio'
+import { defineComponent } from '@atrotos/vio'
 
 const MyButton = defineComponent({
   name: 'MyButton',
@@ -314,7 +314,7 @@ history.forEach((event) => {
 ## Full Example
 
 ```ts
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 const Home = defineComponent({
   name: 'Home',

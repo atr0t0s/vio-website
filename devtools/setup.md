@@ -5,7 +5,7 @@ This page walks through installing `vio-devtools` and connecting it to your Vio 
 ## Installation
 
 ```bash
-npm install vio-devtools
+npm install @atrotos/vio-devtools
 ```
 
 ## Browser-Side Setup
@@ -13,8 +13,8 @@ npm install vio-devtools
 In your application entry point, import `connectDevtools` from the client subpath and pass your Vio app instance:
 
 ```ts
-import { createApp } from 'vio'
-import { connectDevtools } from 'vio-devtools/client'
+import { createApp } from '@atrotos/vio'
+import { connectDevtools } from '@atrotos/vio-devtools/client'
 
 const app = createApp({
   // your app config
@@ -71,9 +71,9 @@ The MCP server runs as a Node.js process and communicates with your AI agent ove
 ```json
 {
   "mcpServers": {
-    "vio-devtools": {
+    "@atrotos/vio-devtools": {
       "command": "node",
-      "args": ["./node_modules/vio-devtools/dist/cli.js"]
+      "args": ["./node_modules/@atrotos/vio-devtools/dist/cli.js"]
     }
   }
 }
@@ -86,9 +86,9 @@ To use a port other than the default 3100, set the `VIO_DEVTOOLS_PORT` environme
 ```json
 {
   "mcpServers": {
-    "vio-devtools": {
+    "@atrotos/vio-devtools": {
       "command": "node",
-      "args": ["./node_modules/vio-devtools/dist/cli.js"],
+      "args": ["./node_modules/@atrotos/vio-devtools/dist/cli.js"],
       "env": {
         "VIO_DEVTOOLS_PORT": "4200"
       }

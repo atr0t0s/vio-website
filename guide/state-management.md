@@ -7,7 +7,7 @@ Vio provides two complementary systems for managing data: **local component stat
 Every component can declare an initial `state` object inside `defineComponent`. This state is private to the component instance.
 
 ```typescript
-import { defineComponent } from 'vio'
+import { defineComponent } from '@atrotos/vio'
 
 const Counter = defineComponent({
   name: 'Counter',
@@ -114,7 +114,7 @@ For state that needs to be shared across components — user authentication, the
 A store is configured with `state` (initial values) and `actions` (pure reducer functions):
 
 ```typescript
-import { createApp } from 'vio'
+import { createApp } from '@atrotos/vio'
 
 const store = {
   state: {
@@ -282,7 +282,7 @@ Use **local state** for data that only one component cares about — toggle flag
 Here is a full example combining local and global state:
 
 ```typescript
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 // Global store for todos
 const store = {

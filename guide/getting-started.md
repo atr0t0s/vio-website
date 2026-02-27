@@ -9,22 +9,22 @@ Core principles:
 - **JSON-to-DOM** -- Components return plain `{ tag, props, children }` objects. No templates, no JSX, no compiler step. Any LLM can produce valid component trees.
 - **Immutable state** -- State changes produce new objects. The virtual DOM diff determines exactly what to update.
 - **Observable everything** -- All mutations flow through an event bus. Every state change, route transition, and store dispatch is serializable, loggable, and replayable.
-- **MCP-ready** -- Connect the companion `vio-devtools` package and any MCP-capable client (Claude Code, Cursor, etc.) can read state, dispatch actions, navigate routes, and inspect the component tree in real time.
+- **MCP-ready** -- Connect the companion `@atrotos/vio-devtools` package and any MCP-capable client (Claude Code, Cursor, etc.) can read state, dispatch actions, navigate routes, and inspect the component tree in real time.
 
 ## Installation
 
 ::: code-group
 
 ```sh [npm]
-npm install vio
+npm install @atrotos/vio
 ```
 
 ```sh [pnpm]
-pnpm add vio
+pnpm add @atrotos/vio
 ```
 
 ```sh [yarn]
-yarn add vio
+yarn add @atrotos/vio
 ```
 
 :::
@@ -34,7 +34,7 @@ yarn add vio
 Components in Vio are defined with `defineComponent()`. A component needs a **name**, optional initial **state**, and a **render** function that returns a `VioNodeDescriptor` -- a plain object describing what to render.
 
 ```typescript
-import { defineComponent } from 'vio'
+import { defineComponent } from '@atrotos/vio'
 
 const Greeting = defineComponent({
   name: 'Greeting',
@@ -66,7 +66,7 @@ Because components are plain data, any tool that can produce JSON can produce a 
 Use `createApp()` to wire everything together. It accepts an `AppConfig` object:
 
 ```typescript
-import { createApp } from 'vio'
+import { createApp } from '@atrotos/vio'
 
 const app = createApp({
   root: '#app',       // CSS selector or HTMLElement
@@ -107,7 +107,7 @@ Vio uses hash-based routing (`#/path`). When the hash changes, the router automa
 Here is a full working example that puts all the pieces together -- a counter app with a global store for theming:
 
 ```typescript
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 // Define a Counter component with local state
 const Counter = defineComponent({

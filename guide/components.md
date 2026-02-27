@@ -7,7 +7,7 @@ Components are the building blocks of a Vio application. A component is a plain 
 Use `defineComponent()` to create a component definition:
 
 ```typescript
-import { defineComponent } from 'vio'
+import { defineComponent } from '@atrotos/vio'
 
 const MyComponent = defineComponent({
   name: 'MyComponent',
@@ -464,7 +464,7 @@ Registering a component with a name that is already taken will throw an error. E
 Here is a complete example combining local state, lifecycle hooks, nested components, and event emission:
 
 ```typescript
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 // A reusable Button component
 const Button = defineComponent({

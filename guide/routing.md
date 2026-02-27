@@ -7,7 +7,7 @@ Vio includes a built-in hash-based router. Routes map URL paths to components, s
 A route is an object with a `path` and a `component`. Optionally, add a `guard` function for access control.
 
 ```typescript
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 const Home = defineComponent({
   name: 'Home',
@@ -281,7 +281,7 @@ All event handlers receive a `VioEvent` object with `type`, `payload`, and `time
 Here is a full routing example with authentication:
 
 ```typescript
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 // --- Components ---
 

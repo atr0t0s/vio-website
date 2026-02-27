@@ -5,7 +5,7 @@ Creates a component definition object from a configuration. This is the standard
 ## Import
 
 ```ts
-import { defineComponent } from 'vio'
+import { defineComponent } from '@atrotos/vio'
 ```
 
 ## Signature
@@ -226,7 +226,7 @@ const Tracker = defineComponent({
 ## Full Example
 
 ```ts
-import { defineComponent } from 'vio'
+import { defineComponent } from '@atrotos/vio'
 
 const TodoList = defineComponent({
   name: 'TodoList',

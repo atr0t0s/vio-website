@@ -5,7 +5,7 @@ The `HttpClient` class provides a lightweight HTTP client built on the Fetch API
 ## Import
 
 ```ts
-import { HttpClient } from 'vio'
+import { HttpClient } from '@atrotos/vio'
 ```
 
 ## Signature
@@ -203,7 +203,7 @@ Multiple interceptors are applied in the order they are registered. Each interce
 ## Full Example
 
 ```ts
-import { HttpClient } from 'vio'
+import { HttpClient } from '@atrotos/vio'
 
 interface Todo {
   id: number

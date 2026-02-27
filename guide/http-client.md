@@ -5,7 +5,7 @@ Vio ships a lightweight `HttpClient` class built on the native `fetch` API. It p
 ## Creating an HttpClient
 
 ```typescript
-import { HttpClient } from 'vio'
+import { HttpClient } from '@atrotos/vio'
 
 const client = new HttpClient({
   baseURL: 'https://api.example.com',
@@ -147,7 +147,7 @@ client.interceptors.response.use((response) => {
 A typical pattern is fetching data inside the `onMount` lifecycle hook:
 
 ```typescript
-import { HttpClient } from 'vio'
+import { HttpClient } from '@atrotos/vio'
 
 const api = new HttpClient({ baseURL: 'https://api.example.com' })
 

@@ -5,7 +5,7 @@ The `Store` class provides centralized state management for Vio applications. It
 ## Import
 
 ```ts
-import { Store } from 'vio'
+import { Store } from '@atrotos/vio'
 ```
 
 ::: tip
@@ -134,7 +134,7 @@ The store emits the following event on the event bus after every dispatch:
 ## Full Example
 
 ```ts
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 const Counter = defineComponent({
   name: 'Counter',

@@ -5,7 +5,7 @@ The `Router` class provides hash-based client-side routing for Vio applications.
 ## Import
 
 ```ts
-import { Router } from 'vio'
+import { Router } from '@atrotos/vio'
 ```
 
 ::: tip
@@ -159,7 +159,7 @@ The router emits three events during navigation (in order):
 ## Full Example
 
 ```ts
-import { createApp, defineComponent } from 'vio'
+import { createApp, defineComponent } from '@atrotos/vio'
 
 const Home = defineComponent({
   name: 'Home',

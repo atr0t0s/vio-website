@@ -5,7 +5,7 @@ The `EventBus` class is the publish/subscribe messaging system used throughout V
 ## Import
 
 ```ts
-import { EventBus } from 'vio'
+import { EventBus } from '@atrotos/vio'
 ```
 
 ::: tip
@@ -169,7 +169,7 @@ You can also emit and listen for any custom event type.
 ## Full Example
 
 ```ts
-import { EventBus } from 'vio'
+import { EventBus } from '@atrotos/vio'
 
 const bus = new EventBus({ historySize: 200 })
 

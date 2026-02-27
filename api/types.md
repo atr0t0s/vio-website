@@ -19,11 +19,11 @@ import type {
   VioEvent,
   VioEventType,
   BatchOperation,
-} from 'vio'
+} from '@atrotos/vio'
 
-import type { VioApp } from 'vio'
-import type { VioForm } from 'vio'
-import type { RouteMatch } from 'vio'
+import type { VioApp } from '@atrotos/vio'
+import type { VioForm } from '@atrotos/vio'
+import type { RouteMatch } from '@atrotos/vio'
 ```
 
 ---

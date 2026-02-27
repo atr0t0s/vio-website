@@ -5,7 +5,7 @@ The `createForm` function builds a form manager with field definitions, validati
 ## Import
 
 ```ts
-import { createForm } from 'vio'
+import { createForm } from '@atrotos/vio'
 ```
 
 ## createForm Signature
@@ -188,7 +188,7 @@ const LoginForm = defineComponent({
 ## Full Example
 
 ```ts
-import { createForm, defineComponent, createApp } from 'vio'
+import { createForm, defineComponent, createApp } from '@atrotos/vio'
 
 const form = createForm({
   fields: {
